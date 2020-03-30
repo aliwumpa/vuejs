@@ -1,0 +1,289 @@
+/* default heading css */
+/* html, body {
+    height: 100%;
+    overflow: hidden;
+  } */
+
+body{
+    /* background-image: url("img/background_html.jpg"); */
+}
+
+main {
+    min-height: calc(100vh - 527px);
+  }
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #ff66ff 0%, #003300 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2em;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #ff66ff 0%, #003300 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* opacity: 15%; */
+}
+
+h3 {
+    font-size: 28px;
+    background: linear-gradient(to bottom right, #ff66ff 0%, #003300 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* opacity: 15%; */
+}
+
+.wumpa-p{
+    font-size: 20px;
+    background: linear-gradient(to bottom right, #990099 49%, #ffe6ff 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wumpa2-p{
+    font-size: 20px;
+    background: linear-gradient(to bottom right, #990099 49%, #ffe6ff 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+/* app vue styling */
+#app-vue1{
+    text-align: center;
+}
+
+#app-vue2 {
+    text-align: center;
+}
+#navbar {
+    text-align: center;
+}
+
+#navbar > ul {
+    
+}
+
+#navbar > ul > li{
+    display: inline;
+    list-style: none;
+    margin-right: 1em;
+}
+
+#navbar > ul > li > a{
+    font-size: 24px;
+}
+
+#navbar > ul > li > a:link{
+
+    text-decoration: none;
+    background: linear-gradient(to bottom right, #ff66ff 0%, #003300 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+/* app vue3 styling */
+#app-vue3{
+    margin-bottom: 3em;
+    text-align: center;
+}
+/* app vue3 styling > list-1 */
+#app-vue3 > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+#app-vue3 > ul > li{
+    list-style: none;
+    text-align: center;
+}
+
+#app-vue3 > ul > li > p {
+    font-size: 24px;
+    font-weight: bold;
+} 
+
+/* app vue3 styling > list-2 */
+.hr-divider{
+    width: 100%;
+    height: 2px;
+    color: white;
+    opacity: 70%;
+}
+
+#app-vue3 > .ul-2 > li > .wrapper-maid{
+    position: relative;
+}
+
+#app-vue3 > .ul-2 > li > .wrapper-maid > p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;    
+}
+
+#app-vue3 > .ul-2 > li:nth-child(1) > .wrapper-maid > p {
+    position: relative;
+}
+
+#app-vue3 > .ul-2 > li:nth-child(2) > .wrapper-maid > p {
+    position: relative;
+    top: 1.45em;
+    left: 1em;
+}
+
+#app-vue3 > .ul-2 > li:nth-child(3) > .wrapper-maid > p {
+    position: relative;
+    top: 0.4em;
+    left: 1.5em;
+}
+
+#app-vue3 > .ul-2 > li:nth-child(4) > .wrapper-maid > p {
+    position: relative;
+    right: 2.2em;
+    top: 0.1em;
+}
+
+#app-vue3 > .ul-2 > li:nth-child(5) > .wrapper-maid > p {
+    position: relative;
+    right: 1em;
+    top: 0.05em;
+}
+
+.container-card > .list-idol{
+    text-align: left;
+}
+
+.container-card > .list-idol > li {
+    list-style: none;
+}
+
+
+/* default image */
+.img-shiny{
+    
+}
+
+.img-maid{
+    /* width: 223px;
+    height: 226px; */
+}
+
+
+/* section-button */
+#section-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-button > #v-toggle-wrapper > .button-toggle{
+    margin-right: 2em;
+    padding: 0.5em;
+}
+
+#section-button > #v-onclick-wrapper > .button-once{
+    padding: 0.5em;
+}
+
+/* section-disrective */
+#section-disrective{
+    /* display: flex; */
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    /* margin-right: auto;
+    margin-left: auto; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#section-disrective > h3 {
+    /* display: block; */
+   
+}
+
+#section-disrective > #v-text-wrapper{
+    font-size: 42px;
+    font-weight: bold;
+    background: linear-gradient(to bottom right, #ff66ff 0%, #003300 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid black;
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+#section-disrective > #v-bind-wrapper{
+    border: 2px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#section-disrective > #v-bind-wrapper > .ex-style {
+    width: 70%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin : 0 auto;
+}
+
+#section-disrective > #v-loop-wrapper {
+    /* width: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-disrective > #v-loop-wrapper > .wrapper-list-1 {
+    /* display: inline; */
+    height: 250px;
+}
+
+#section-disrective > #v-loop-wrapper > .wrapper-list-2 {
+    height: 250px;
+}
+
+#section-disrective > #v-loop-wrapper > .wrapper-list-3 {
+    height: 250px;
+}
+
+#section-disrective > #v-loop-wrapper > .wrapper-list-1 > .ul-1{
+    /* text-align: left; */
+   
+}
+
+#section-disrective > #v-loop-wrapper > .wrapper-list-2 > .ul-2{
+    vertical-align: top;
+}
+
+/* Footer style */
+.hr-footer{
+    width: 100%;
+    height: 2px;
+    color: white;
+    /* opacity: 70%; */
+}
+.footer{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-bottom: 1em;
+}
+.footer > .wrapper-p {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.footer > .wrapper-p > p {
+    background: linear-gradient(to bottom right, #ff66ff 0%, #003300 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}

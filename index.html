@@ -1,0 +1,148 @@
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+
+    </head>
+    <body>
+        <main>
+            <div id="app-vue1"><h1>{{ title }}</h1></div>
+            <div id="app-vue2"><h2>{{ createdby }}</h2></div>
+            <div id="navbar">
+                <h3>-Example disrective v-href-</h3>
+                <ul>
+                    <li><a class="link_page1" v-bind:href="url_page1">{{ name_page1 }}</a></li>
+                    <li><a class="link_page2" v-bind:href="url_page2">{{ name_page2 }}</a></li>
+                </ul>
+            </div>
+
+            <!-- example injecting vue component into div -->
+            <div id="app-vue3" ref="appvue3">
+                <h3>List side-chick per day</h3>
+                <ul class="ul-1" v-show="toggle_list" v-if="toggle_list">
+                    <days
+                    v-for="day in days"
+                    v-bind:daysprops="day"
+                    v-bind:key="day.id"
+                ></days>
+                </ul>
+                <hr class="hr-divider"></hr>
+                <h3>List nanny in the house</h3>
+                <ul class="ul-2" v-show="toggle_list" v-if="toggle_list">
+                    <maids
+                    v-for="maid in maidsitem"
+                    v-bind:maidsprops="maid"
+                    v-bind:key="maid.id"
+                    ></maids>
+                </ul>
+
+                <section id="section-button">
+                    <!-- hide and show with v-show -->
+                    <div id="v-toggle-wrapper">
+
+                        <!-- example button in vue -->
+                        <button class="button-toggle" v-on:click="OnClickEvent();">V-ONCLICK V-SHOW / V-IF HIDE AND SHOW TOGGLE  </button>
+                    </div>
+    
+                    <!-- hide and show once -->
+                    <div id="v-onclick-wrapper">
+
+                        <!-- example button in vue -->
+                        <button class="button-once" v-on:click="OnClickOnce();">V-ONCLICK HIDE ONCE</button>
+                    </div>
+    
+                    <!-- hide and show with v-on toggle -->
+                    <!-- <div id="v-onclick-toggle-wrapper"></div> -->
+
+                        <!-- example button in vue -->
+                        <!-- <button>V-ONCLICK TOGGLE</button> -->
+    
+                </section>
+
+            </div>
+
+            
+
+            <!-- example event name in vue -->
+            <section id="section-event">
+                <div id="v-event-wrapper"></div>
+            </section>
+
+            <!-- example all disrective in vue -->
+            <section id="section-disrective">
+                <h3>-Example disrective v-text-</h3>
+                <div id="v-text-wrapper" v-text="text"></div>
+                <h3>-Example disrective v-bind-</h3>
+                <div id="v-bind-wrapper">
+                    <h4>example v-href</h4>
+                    <a v-bind:href= hrefex>Shiny colors link</a>
+                    <h4>example v-style</h4>
+                    <div class="ex-style" v-bind:style="{ backgroundImage: 'url('+urlex+')' }"></div>
+                    <h4>example v-src</h4>
+                    <img v-bind:src=srcex>
+
+                </div>
+
+                <h3>-Example disrective v-html-</h3>
+                <div id="v-html-wrapper" v-html="content"></div>
+                <h3>-Example disrective v-model-</h3>
+                <div id="v-model-wrapper"></div>
+
+                <h3>-Example disrective v-loop-</h3>
+                <div id="v-loop-wrapper">
+                    <div class="wrapper-list-1">
+                        <ul class="ul-1">  
+                            <h4>looping item</h4>
+                            <exloop
+                            v-for="loop in listidol"
+                            v-bind:exloopprops="loop"
+                            v-bind:key="loop.id"
+                            ></exloop>
+                        </ul>
+                    </div>
+
+                    <div class="wrapper-list-2">
+                        <ul class="ul-2">
+                            <h4>looping object</h4>
+                            <exloopobject
+                                v-for="list in listobject"
+                                v-bind:exprops="list"
+                                v-bind:key="list.id"                        
+                            ></exloopobject>
+                        </ul>
+                    </div>
+
+                    <div class="wrapper-list-3">
+                        <ul class="ul-2">
+                            <h4>single object</h4>
+                            <exsingleobject
+                                v-bind:extitle="listobject[0].name"
+                                v-bind:exname="listobject[0].title"
+
+                            ></exsingleobject>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <div id="footer-div"></div>
+            <!-- <div id="app-vue4">
+                <img v-bind:src="wf1" alt="">
+            </div> -->
+        </main>
+    </body>
+        <script src="vue_place.js"></script>
+
+
+       
+        <!-- v-bind:exbook="list.book" -->
+        <!-- v-bind:extitle= listobject.title -->
+        <!-- v-bind:listobject -->
+        
+
+
